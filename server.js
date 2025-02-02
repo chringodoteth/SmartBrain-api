@@ -12,16 +12,16 @@ import handleGetFace from './controllers/detectFace.js';
 
 
 const db = knex({
-    client: 'pg',
-    connection: {
-      Hostname: 'dpg-cufnkqa3esus73e2jel0-a.frankfurt-postgres.render.com',
-      port: 5432,
-      user: 'smart_brain_4hc4_user',
-      password: 'VooEflEERJivBvN7KQ1gfbpuWmraVO0m',
-      database: 'smart_brain_4hc4',
-      ssl: true
-    },
-  });
+  client: 'pg',
+  connection: {
+      host: process.env.DB_HOST,
+      port: process.env.DB_PORT,
+      user: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
+      database: process.env.DB_NAME,
+      ssl: { rejectUnauthorized: false },
+  },
+});
 
 db.select('*').from('users').then(data => {
     console.log(data);
