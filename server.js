@@ -14,10 +14,10 @@ import handleGetFace from './controllers/detectFace.js';
 const db = knex({
     client: 'pg',
     connection: {
-      host: '127.0.0.1',
+      host: 'dpg-cufnkqa3esus73e2jel0-a',
       port: 5432,
-      user: '',
-      password: 'your_database_password',
+      user: 'smart_brain_4hc4_user',
+      password: 'VooEflEERJivBvN7KQ1gfbpuWmraVO0m',
       database: 'smart-brain',
     },
   });
