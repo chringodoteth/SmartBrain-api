@@ -2,7 +2,7 @@ const handleGetFace = (req, res) => {
     const { input } = req.body;
 
     // Replace with your Clarifai API key
-    const API_KEY = '21f9acc717994974a2781fcbc447f781';
+    const API_KEY = process.env.CLARIFAI_API_KEY;
 
     const raw = JSON.stringify({
         user_app_id: {
