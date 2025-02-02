@@ -14,7 +14,7 @@ import handleGetFace from './controllers/detectFace.js';
 const db = knex({
     client: 'pg',
     connection: {
-      Hostname: 'dpg-cufnkqa3esus73e2jel0-a',
+      Hostname: 'dpg-cufnkqa3esus73e2jel0-a.frankfurt-postgres.render.com',
       port: 5432,
       user: 'smart_brain_4hc4_user',
       password: 'VooEflEERJivBvN7KQ1gfbpuWmraVO0m',
